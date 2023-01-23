@@ -3415,6 +3415,14 @@ where
             );
         }
 
+        if self
+            .settings
+            .rules
+            .enabled(&Rule::DangerousDefaultValue)
+        {
+            pylint::rules::dangerous_default_value(self, arguments)
+        }
+
         // Bind, but intentionally avoid walking default expressions, as we handle them
         // upstream.
         for arg in &arguments.posonlyargs {

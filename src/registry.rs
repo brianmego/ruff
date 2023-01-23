@@ -91,6 +91,7 @@ ruff_macros::define_rule_mapping!(
     PLR1701 => violations::ConsiderMergingIsinstance,
     PLR1722 => violations::UseSysExit,
     PLR2004 => violations::MagicValueComparison,
+    PLW0102 => rules::pylint::rules::dangerous_default_value::DangerousDefaultValue,
     PLW0120 => violations::UselessElseOnLoop,
     PLW0602 => violations::GlobalVariableNotAssigned,
     // flake8-builtins

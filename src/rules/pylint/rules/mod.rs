@@ -1,4 +1,5 @@
 pub use await_outside_async::await_outside_async;
+pub use dangerous_default_value::dangerous_default_value;
 pub use constant_comparison::constant_comparison;
 pub use magic_value_comparison::magic_value_comparison;
 pub use merge_isinstance::merge_isinstance;
@@ -12,6 +13,7 @@ pub use useless_import_alias::useless_import_alias;
 
 mod await_outside_async;
 mod constant_comparison;
+pub mod dangerous_default_value;
 mod magic_value_comparison;
 mod merge_isinstance;
 mod property_with_parameters;

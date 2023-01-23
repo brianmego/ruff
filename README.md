@@ -1137,6 +1137,7 @@ For more, see [Pylint](https://pypi.org/project/pylint/2.15.7/) on PyPI.
 #### Warning (PLW)
 | Code | Name | Message | Fix |
 | ---- | ---- | ------- | --- |
+| PLW0102 | dangerous-default-value | Dangerous default value {value} used as argument, consider defaulting to None and assigning inside the function body |  |
 | PLW0120 | useless-else-on-loop | Else clause on loop without a break statement, remove the else and de-indent all the code inside it |  |
 | PLW0602 | global-variable-not-assigned | Using global for `{name}` but no assignment is done |  |
 
